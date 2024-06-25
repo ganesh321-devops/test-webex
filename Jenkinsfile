@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'name', defaultValue: 'John Doe', description: 'Name of the person')
-        string(name: 'age', defaultValue: '25', description: 'Age of the person')
-        string(name: 'school', defaultValue: 'ABC University', description: 'School of the person')
+        string(name: 'name', description: 'Name of the person')
+        string(name: 'age', description: 'Age of the person')
+        string(name: 'school', description: 'School of the person')
     }
 
     stages {
