@@ -11,9 +11,9 @@ pipeline {
         stage('Echo Parameters') {
             steps {
                 script {
-                    echo "Name: ${params.name}"
-                    echo "Age: ${params.age}"
-                    echo "School: ${params.school}"
+                    echo "Name: ${params.deployenv}"
+                    echo "Age: ${params.stage_number}"
+                    echo "School: ${params.CCID}"
                 }
             }
         }
